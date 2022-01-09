@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Todo
+    </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button (click)="add()">
+        <ion-icon slot="icon-only" name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of todos">
+      <ion-label>
+        <h1>{{ item.title }}</h1>
+        <p>{{ item.description }}</p>
+      </ion-label>
+      <ion-buttons>
+        <ion-button (click)="edit(item)">
+          <ion-icon slot="icon-only" name="create-outline"></ion-icon>
+        </ion-button>
+        <ion-button (click)="delete(item)">
+          <ion-icon slot="icon-only" name="trash"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+  </ion-list>
+</ion-content>
