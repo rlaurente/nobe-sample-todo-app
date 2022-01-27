@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-buttons>
+        <ion-back-button defaultHref="/home"></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title>
+      Gallery
+    </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button (click)="add()">
+        <ion-icon slot="icon-only" name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content>
+<input type="file" style="display: none;" (change)="onSelectFile($event)" class="file-upload" />

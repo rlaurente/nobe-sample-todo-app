@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { TodoMockService } from './todo-mock.service';
+import { GalleryService } from './gallery.service';
 
-describe('TodoMockService', () => {
-  let service: TodoMockService;
+describe('GalleryService', () => {
+  let service: GalleryService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(TodoMockService);
+    service = TestBed.inject(GalleryService);
   });
 
   it('should be created', () => {

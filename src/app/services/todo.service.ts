@@ -9,7 +9,6 @@ import { apply, get, mock, request, set } from '@rlaurente/nobe';
 export class TodoService {
 
   async GetListing(): Promise<Todo[]> {     //  getting todo list
-
     mock({
       url: `https://sample.app/api/todos/listing`,
       handler: async () => {
